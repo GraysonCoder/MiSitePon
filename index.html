@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Арсений — Официальный сайт</title>
+    <style>
+        body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f0f4f8;
+    color: #333;
+    scroll-behavior: smooth;
+    transition: background 0.4s ease;
+    }
+
+    header {
+        background-color: #2c3e50;
+        color: white;
+        padding: 40px 20px;
+        text-align: center;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        transition: all 0.4s ease;
+    }
+
+    nav {
+        background: #34495e;
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    nav a {
+        color: white;
+        margin: 0 15px;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+        color: #1abc9c;
+    }
+
+    section {
+        max-width: 800px;
+        margin: 60px auto;
+        padding: 0 20px;
+        opacity: 0;
+        transform: translateY(30px);
+        animation: fadeInUp 1s ease forwards;
+    }
+
+    section:nth-of-type(2) {
+        animation-delay: 0.2s;
+    }
+    section:nth-of-type(3) {
+        animation-delay: 0.4s;
+    }
+    section:nth-of-type(4) {
+        animation-delay: 0.6s;
+    }
+    section:nth-of-type(5) {
+        animation-delay: 0.8s;
+    }
+
+    h2 {
+        color: #2c3e50;
+        transition: color 0.3s ease;
+    }
+
+    footer {
+        background: #2c3e50;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        margin-top: 40px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        box-shadow: 0 -4px 10px rgba(0,0,0,0.05);
+    }
+
+    .telegram-button {
+        display: inline-block;
+        background: #0088cc;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 8px;
+        text-decoration: none;
+        transition: background 0.3s ease, transform 0.3s ease;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .telegram-button:hover {
+        background: #0077b3;
+        transform: scale(1.05);
+    }
+
+    @keyframes fadeInUp {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Привет, я Арсений</h1>
+        <p>Люблю программировать и кататься на горных лыжах</p>
+    </header>
+
+    <nav>
+        <a href="#about">Обо мне</a>
+        <a href="#hobbies">Увлечения</a>
+        <a href="#projects">Проекты</a>
+        <a href="#contact">Контакты</a>
+    </nav>
+
+    <section id="about">
+        <h2>Обо мне</h2>
+        <p>Меня зовут Арсений. Я интересуюсь программированием и стараюсь создавать полезные, интересные и весёлые проекты. Также я люблю природу и особенно горные лыжи — это отличный способ отдохнуть и зарядиться энергией!</p>
+    </section>
+
+    <section id="hobbies">
+        <h2>Увлечения</h2>
+        <ul>
+            <li>Разработка на Python, C++, HTML/CSS</li>
+            <li>Создание игр и приложений</li>
+            <li>Горные лыжи и активный отдых</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Проекты</h2>
+        <p>Скоро здесь появятся мои проекты — следите за обновлениями!</p>
+    </section>
+
+    <section id="contact">
+        <h2>Контакты</h2>
+        <p>Подписывайтесь на мой Telegram-канал:</p>
+        <a href="https://t.me/StandZonePrivate" class="telegram-button" target="_blank">Перейти в Telegram</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Арсений. Все права защищены.</p>
+    </footer>
+</body>
+</html>
